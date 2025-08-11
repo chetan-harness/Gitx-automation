@@ -1,0 +1,20 @@
+template:
+  name: te
+  identifier: te
+  versionLabel: v1
+  type: Step
+  orgIdentifier: Org1_WebhookTest
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      executionTarget: {}
+      delegateSelectors: []
+      source:
+        type: Inline
+        spec:
+          script: "echo hi "
+      environmentVariables: []
+      outputVariables: []
