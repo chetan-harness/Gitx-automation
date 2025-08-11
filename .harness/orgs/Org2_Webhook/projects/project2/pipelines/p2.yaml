@@ -1,0 +1,30 @@
+pipeline:
+  name: p2
+  identifier: p2
+  projectIdentifier: project2
+  orgIdentifier: Org2_Webhook
+  tags: {}
+  stages:
+    - stage:
+        name: xca
+        identifier: xca
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: qdwad
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
